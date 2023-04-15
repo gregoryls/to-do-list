@@ -15,7 +15,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "XXXXX",
+      title: "To-Do List",
       minify: false,
     }),
   ],
