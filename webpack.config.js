@@ -8,6 +8,7 @@ module.exports = {
     header: "./src/header.js",
     sidebar: "./src/sidebar.js",
     content: "./src/content.js",
+    elementCreate: "./src/elementCreate.js",
   },
   devtool: "inline-source-map",
   output: {
