@@ -1,4 +1,4 @@
-import createElementWithId from "./index";
+import createElementWithId from "./elementCreate";
 
 const contentWrapper = document.getElementById("contentWrapper");
 
