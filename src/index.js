@@ -1,4 +1,7 @@
 import "./style.css";
+import headerCreation from "./header";
+import sidebarCreation from "./sidebar";
+import contentCreation from "./content";
 
 export default function createElementWithId(element, id) {
   const elem = document.createElement(element);
