@@ -16,4 +16,7 @@ function createPageSections() {
 
   return wrapper;
 }
+
 document.body.appendChild(createPageSections());
+
+document.body.append(headerCreation());

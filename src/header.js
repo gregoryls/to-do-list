@@ -1,9 +1,9 @@
 import createElementWithId from "./elementCreate";
 
-const contentWrapper = document.getElementById("contentWrapper");
+// const contentWrapper = document.getElementById("contentWrapper");
 
 function section() {
-  contentWrapper.appendChild(createElementWithId("section", "header"));
+  return createElementWithId("section", "header");
 }
 
 export default function headerCreation() {
