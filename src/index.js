@@ -1,9 +1,9 @@
 import "./style.css";
-import createElementWithId from "./elementCreate";
+// import createElementWithId from "./elementCreate";
 import headerCreation from "./header";
-// import sidebarCreation from "./sidebar";
+import sidebarCreation from "./sidebar";
 // import contentCreation from "./content";
 
 // document.body.appendChild(createElementWithId("div", "test"));
 
-document.body.append(headerCreation());
+document.body.append(headerCreation(), sidebarCreation());
