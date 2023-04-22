@@ -1,5 +1,5 @@
 import createElementWithId, { importImage } from "./elementCreate";
-import icon from "./img/listIcon.png";
+import icon from "./img/listIcon.svg";
 
 function sidebarDOM() {
   const sidebarWrap = createElementWithId("section", "sidebar");
