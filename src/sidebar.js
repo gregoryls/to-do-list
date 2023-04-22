@@ -1,4 +1,4 @@
-import createElementWithId from "./elementCreate";
+import createElementWithId, { importImage } from "./elementCreate";
 import icon from "./img/listIcon.png";
 
 function sidebarDOM() {
@@ -6,6 +6,7 @@ function sidebarDOM() {
   // TODO find image for logo
 
   const logo = createElementWithId("div", "logo");
+  logo.append(importImage(icon));
 
   sidebarWrap.append(logo);
   return sidebarWrap;
