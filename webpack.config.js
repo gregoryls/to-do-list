@@ -9,6 +9,7 @@ module.exports = {
     sidebar: "./src/sidebar.js",
     content: "./src/content.js",
     elementCreate: "./src/elementCreate.js",
+    task: "./src/task.js",
   },
   devtool: "inline-source-map",
   output: {
