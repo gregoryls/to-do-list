@@ -1,6 +1,7 @@
 import createElementWithId from "./elementCreate";
 
 function contentDOM() {
+  // TODO make an overall content wrap
   const taskLabels = createElementWithId("div", "labels");
   const taskName = createElementWithId("p");
   taskName.textContent = "test";
@@ -10,6 +11,11 @@ function contentDOM() {
   return taskLabels;
 }
 
+export function taskModalDOM() {
+  const modal = createElementWithId("div", "taskModal");
+
+  return modal;
+}
 export default function contentCreation() {
   return contentDOM();
 }
