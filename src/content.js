@@ -2,7 +2,9 @@ import createElementWithId from "./elementCreate";
 
 function taskModalDOM() {
   const modal = createElementWithId("div", "taskModal");
+  const form = createElementWithId("form", "taskForm");
 
+  modal.append(form);
   return modal;
 }
 
