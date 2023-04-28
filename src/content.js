@@ -5,8 +5,6 @@ function taskModalDOM() {
   const form = createElementWithId("form", "taskForm");
   const nameInput = createInputElement("text", "nameInput", "nameInput");
 
-  console.log(createInputElement("text", "nameInput", "nameInput2"));
-
   form.append(nameInput);
 
   modal.append(form);

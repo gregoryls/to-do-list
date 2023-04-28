@@ -22,6 +22,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "To-Do List",
       minify: false,
+      template: "./src/index.html",
     }),
   ],
   module: {
