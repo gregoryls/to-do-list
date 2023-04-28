@@ -1,8 +1,13 @@
-import createElementWithId from "./elementCreate";
+import createElementWithId, { createInputElement } from "./elementCreate";
 
 function taskModalDOM() {
   const modal = createElementWithId("div", "taskModal");
   const form = createElementWithId("form", "taskForm");
+  const nameInput = createInputElement("text", "nameInput", "nameInput");
+
+  console.log(createInputElement("text", "nameInput", "nameInput"));
+
+  form.append(nameInput);
 
   modal.append(form);
   return modal;

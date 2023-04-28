@@ -10,3 +10,10 @@ export function importImage(source) {
   img.src = source;
   return img;
 }
+
+export function createInputElement(type, name, id) {
+  const elem = document.createElement("input");
+  elem.type = type;
+  elem.name = name;
+  elem.id = id;
+}
