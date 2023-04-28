@@ -16,4 +16,6 @@ export function createInputElement(type, name, id) {
   elem.type = type;
   elem.name = name;
   elem.id = id;
+
+  return elem;
 }
