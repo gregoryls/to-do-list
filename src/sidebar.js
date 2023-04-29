@@ -14,3 +14,8 @@ function sidebarDOM() {
 export default function sidebarCreation() {
   return sidebarDOM();
 }
+
+export function sidebarIcon() {
+  const iconWrapper = document.getElementById("iconWrapper");
+  iconWrapper.append(importImage(icon));
+}
