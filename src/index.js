@@ -8,7 +8,7 @@ import createProject from "./projects";
 
 // document.body.appendChild(createElementWithId("div", "test"));
 
-document.body.append(headerCreation(), sidebarCreation(), contentCreation());
+// document.body.append(headerCreation(), sidebarCreation(), contentCreation());
 
 console.log(taskCreate("test", "test desc", "tomorrow", 1, "n/a"));
 
