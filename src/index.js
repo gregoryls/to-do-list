@@ -1,7 +1,7 @@
 import "./style.css";
 // import createElementWithId from "./elementCreate";
 // import headerCreation from "./header";
-import { sidebarIcon } from "./sidebar";
+// import { sidebarIcon } from "./sidebar";
 // import contentCreation from "./content";
 import taskCreate from "./task";
 import createProject from "./projects";
