@@ -14,3 +14,4 @@ import createProject from "./projects";
 console.log(taskCreate("test", "test desc", "tomorrow", 1, "n/a"));
 
 console.log(createProject("test2"));
+console.log("test");

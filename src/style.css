@@ -2,7 +2,9 @@
 body {
   background-color: rgb(206, 140, 140);
 }
-
+div {
+  border: 1px solid black;
+}
 /* Header */
 
 /* Sidebar */
