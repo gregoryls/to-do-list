@@ -1,0 +1,21 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+/* General */
+body {
+  background-color: rgb(206, 140, 140);
+}
+div {
+  border: 1px solid black;
+}
+/* Header */
+
+/* Sidebar */
+#icon img {
+  width: 20vw;
+}
+
+/* Content */
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguY3NzIiwibWFwcGluZ3MiOiI7OztBQUFBLFlBQVk7QUFDWjtFQUNFLG9DQUFvQztBQUN0QztBQUNBO0VBQ0UsdUJBQXVCO0FBQ3pCO0FBQ0EsV0FBVzs7QUFFWCxZQUFZO0FBQ1o7RUFDRSxXQUFXO0FBQ2I7O0FBRUEsWUFBWSIsInNvdXJjZXMiOlsid2VicGFjazovL3RvLWRvLWxpc3QvLi9zcmMvc3R5bGUuY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi8qIEdlbmVyYWwgKi9cclxuYm9keSB7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIwNiwgMTQwLCAxNDApO1xyXG59XHJcbmRpdiB7XHJcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XHJcbn1cclxuLyogSGVhZGVyICovXHJcblxyXG4vKiBTaWRlYmFyICovXHJcbiNpY29uIGltZyB7XHJcbiAgd2lkdGg6IDIwdnc7XHJcbn1cclxuXHJcbi8qIENvbnRlbnQgKi9cclxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9*/
