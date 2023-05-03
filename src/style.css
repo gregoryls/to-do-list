@@ -6,7 +6,10 @@ div {
   border: 1px solid black;
 }
 /* Header */
-
+#header {
+  text-align: center;
+  font-size: 3vw;
+}
 /* Sidebar */
 #icon img {
   width: 20vw;
