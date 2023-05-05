@@ -11,7 +11,7 @@ import createProject from "./projects";
 // document.body.append(headerCreation(), sidebarCreation(), contentCreation());
 // sidebarIcon();
 
-console.log(taskCreate("test", "test desc", "tomorrow", 1, "n/a"));
+console.log(taskCreate("test", "test desc", "tomorrow", 1));
 
 console.log(createProject("test3"));
 console.log("test");

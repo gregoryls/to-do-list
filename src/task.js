@@ -1,11 +1,5 @@
-export default function taskCreate(
-  name,
-  description,
-  dueDate,
-  priority,
-  notes
-) {
-  return { name, description, dueDate, priority, notes };
+export default function taskCreate(name, description, dueDate, priority) {
+  return { name, description, dueDate, priority };
 }
 
 // TODO project logic
