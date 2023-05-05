@@ -11,6 +11,8 @@ import createProject from "./projects";
 // document.body.append(headerCreation(), sidebarCreation(), contentCreation());
 // sidebarIcon();
 
+// TODO make a notes tab
+
 console.log(taskCreate("test", "test desc", "tomorrow", 1));
 
 console.log(createProject("test3"));
