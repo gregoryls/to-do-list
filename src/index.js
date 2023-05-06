@@ -13,6 +13,8 @@ import addTasktoProject, { createProject } from "./projects";
 
 // TODO make a notes tab
 
-console.log(taskCreate("test", "test desc", "tomorrow", 1));
+const testObject = taskCreate("name", "desc", "date", "low");
 
-console.log(createProject("test3"));
+const testProject = createProject("test project");
+
+console.log(addTasktoProject(testObject, testProject));
