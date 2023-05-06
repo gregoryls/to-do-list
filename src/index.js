@@ -4,7 +4,7 @@ import "./style.css";
 // import { sidebarIcon } from "./sidebar";
 // import contentCreation from "./content";
 import taskCreate from "./task";
-import createProject from "./projects";
+import addTasktoProject, { createProject } from "./projects";
 
 // document.body.appendChild(createElementWithId("div", "test"));
 
@@ -16,4 +16,3 @@ import createProject from "./projects";
 console.log(taskCreate("test", "test desc", "tomorrow", 1));
 
 console.log(createProject("test3"));
-console.log("test");

@@ -1,3 +1,5 @@
-export default function createProject(name) {
+export function createProject(name) {
   return { name };
 }
+
+export default function addTasktoProject(taskObject) {}
