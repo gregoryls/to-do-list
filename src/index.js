@@ -3,7 +3,7 @@ import "./style.css";
 // import headerCreation from "./header";
 // import { sidebarIcon } from "./sidebar";
 // import contentCreation from "./content";
-import taskCreate from "./task";
+import createTask from "./task";
 import addTasktoProject, { createProject } from "./projects";
 
 // document.body.appendChild(createElementWithId("div", "test"));
@@ -13,7 +13,7 @@ import addTasktoProject, { createProject } from "./projects";
 
 // TODO make a notes tab
 
-const testObject = taskCreate("name", "desc", "date", "low");
+const testObject = createTask("name", "desc", "date", "low");
 
 const testProject = createProject("test project");
 
