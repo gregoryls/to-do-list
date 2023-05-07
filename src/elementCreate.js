@@ -5,6 +5,13 @@ export default function createElementWithId(element, id) {
   return elem;
 }
 
+// 'class' is not allowed as a parameter name
+export function createElementWithClass(element, inputClass) {
+  const elem = document.createElement(element);
+  elem.classList.add(inputClass);
+  return elem;
+}
+
 export function importImage(source) {
   const img = new Image();
   img.src = source;
