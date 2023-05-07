@@ -3,7 +3,7 @@ import "./style.css";
 // import headerCreation from "./header";
 // import { sidebarIcon } from "./sidebar";
 // import contentCreation from "./content";
-import createTask from "./task";
+import createTask, { generateTaskDOM } from "./task";
 import addTasktoProject, { createProject } from "./projects";
 
 // document.body.appendChild(createElementWithId("div", "test"));
@@ -18,3 +18,5 @@ const testObject = createTask("name", "desc", "date", "low");
 const testProject = createProject("test project");
 
 console.log(addTasktoProject(testObject, testProject));
+
+generateTaskDOM(testObject);
