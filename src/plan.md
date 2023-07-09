@@ -1,5 +1,9 @@
 # To-Do List App
 
+## General TODO
+
+- remove html-loader
+
 ## Broad points to achieve
 
 - empty form with a + button to add a new item

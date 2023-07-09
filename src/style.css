@@ -1,6 +1,14 @@
 /* General */
+/* 
+color pallete
+#D1F0B1 tea green
+#B6CB9E celadon
+#92B4A7 cambridge blue
+#8C8A93 taupe gray
+#81667A chinese violet
+*/
 body {
-  background-color: rgb(206, 140, 140);
+  background-color: #8c8a93;
 }
 div {
   border: 1px dashed black;
