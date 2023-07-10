@@ -5,7 +5,6 @@ module.exports = {
   mode: "development",
   entry: {
     index: "./src/index.js",
-    content: "./src/content.js",
     elementCreate: "./src/elementCreate.js",
     task: "./src/task.js",
     projects: "./src/projects.js",
