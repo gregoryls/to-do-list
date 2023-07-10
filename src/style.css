@@ -9,6 +9,12 @@ color palette
 */
 body {
   background-color: #8c8a93;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 10fr;
+  grid-template-areas:
+    "a b"
+    "a c";
 }
 div {
   border: 1px dashed black;
