@@ -12,6 +12,7 @@ import addTasktoProject, { createProject } from "./projects";
 // sidebarIcon();
 
 // TODO make a notes tab
+// investigate disappearing image problem with sidebar icon
 
 const testObject = createTask("name", "desc", "date", "low");
 
