@@ -23,10 +23,17 @@ div {
 #header {
   text-align: center;
   font-size: 3vw;
+  grid-area: b;
 }
 /* Sidebar */
+#sidebar {
+  grid-area: a;
+}
 #icon img {
   width: 20vw;
 }
 
 /* Content */
+#taskContent {
+  grid-area: c;
+}
