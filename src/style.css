@@ -27,10 +27,12 @@ div {
   text-align: center;
   font-size: 3vw;
   grid-area: b;
+  background-color: #81667a;
 }
 /* Sidebar */
 #sidebar {
   grid-area: a;
+  background-color: #d1f0b1;
 }
 #icon img {
   width: 14vw;
@@ -39,4 +41,5 @@ div {
 /* Content */
 #taskContent {
   grid-area: c;
+  background-color: #92b4a7;
 }
