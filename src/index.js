@@ -15,10 +15,21 @@ import addTasktoProject, { createProject } from "./projects";
 // investigate disappearing image problem with sidebar icon
 // temp bookmarks for html loader caching for asset issue
 
-const testObject = createTask("name", "desc", "date", "low");
+const testObject = createTask("nametest", "desctest", "datetest", "lowtest");
 
 const testProject = createProject("test project");
 
 console.log(addTasktoProject(testObject, testProject));
 
 generateTaskDOM(testObject);
+
+const newTaskButton = document.getElementById("newTaskButton");
+newTaskButton.addEventListener("click", () => {
+  const newTask = document.getElementById("taskModal");
+
+  if (newTask.style.display === "none" || newTask.style.display === "") {
+    newTask.style.display = "block";
+  } else {
+    newTask.style.display = "none";
+  }
+});

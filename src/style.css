@@ -43,3 +43,8 @@ div {
   grid-area: c;
   background-color: #92b4a7;
 }
+
+/* Task Modal */
+#taskModal {
+  display: none;
+}
