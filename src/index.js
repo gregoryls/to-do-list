@@ -33,3 +33,8 @@ newTaskButton.addEventListener("click", () => {
     newTask.style.display = "none";
   }
 });
+
+const taskSubmit = document.getElementById("taskSubmit");
+taskSubmit.addEventListener("click", () => {
+  console.log(createTask());
+});
