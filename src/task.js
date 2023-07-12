@@ -4,6 +4,16 @@ export default function createTask(name, description, dueDate, priority) {
   return { name, description, dueDate, priority };
 }
 
+export function getUserTaskInput() {
+  const name = document.getElementById("taskName").value;
+  console.log(name);
+  const description = document.getElementById("taskDescription").value;
+  const dueDate = document.getElementById("taskDueDate").value;
+  const priority = document.getElementById("taskPriority").value;
+
+  return { name, description, dueDate, priority };
+}
+
 export function generateTaskDOM(taskObject) {
   const allTaskElements = document.getElementById("tasks");
 

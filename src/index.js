@@ -3,7 +3,7 @@ import "./style.css";
 // import headerCreation from "./header";
 // import { sidebarIcon } from "./sidebar";
 // import contentCreation from "./content";
-import createTask, { generateTaskDOM } from "./task";
+import createTask, { generateTaskDOM, getUserTaskInput } from "./task";
 import addTasktoProject, { createProject } from "./projects";
 
 // document.body.appendChild(createElementWithId("div", "test"));
@@ -36,5 +36,6 @@ newTaskButton.addEventListener("click", () => {
 
 const taskSubmit = document.getElementById("taskSubmit");
 taskSubmit.addEventListener("click", () => {
-  console.log(createTask());
+  // console.log(createTask());
+  console.log(getUserTaskInput());
 });
