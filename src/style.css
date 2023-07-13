@@ -47,4 +47,12 @@ div {
 /* Task Modal */
 #taskModal {
   display: none;
+  position: fixed;
+  z-index: 2;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
 }
