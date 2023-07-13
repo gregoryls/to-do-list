@@ -3,8 +3,8 @@ import "./style.css";
 // import headerCreation from "./header";
 // import { sidebarIcon } from "./sidebar";
 // import contentCreation from "./content";
-import createTask, { generateTaskDOM, getUserTaskInput } from "./task";
-import addTasktoProject, { createProject } from "./projects";
+import * as task from "./task";
+import * as project from "./projects";
 
 // document.body.appendChild(createElementWithId("div", "test"));
 
@@ -15,13 +15,18 @@ import addTasktoProject, { createProject } from "./projects";
 // investigate disappearing image problem with sidebar icon
 // temp bookmarks for html loader caching for asset issue
 
-const testObject = createTask("nametest", "desctest", "datetest", "lowtest");
+const testObject = task.createTask(
+  "nametest",
+  "desctest",
+  "datetest",
+  "lowtest"
+);
 
-const testProject = createProject("test project");
+const testProject = project.createProject("test project");
 
-console.log(addTasktoProject(testObject, testProject));
+console.log(project.addTasktoProject(testObject, testProject));
 
-generateTaskDOM(testObject);
+task.generateTaskDOM(testObject);
 
 const newTaskButton = document.getElementById("newTaskButton");
 newTaskButton.addEventListener("click", () => {
@@ -37,5 +42,5 @@ newTaskButton.addEventListener("click", () => {
 const taskSubmit = document.getElementById("taskSubmit");
 taskSubmit.addEventListener("click", () => {
   // console.log(createTask());
-  console.log(getUserTaskInput());
+  console.log(task.getUserTaskInput());
 });
