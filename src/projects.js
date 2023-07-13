@@ -3,7 +3,7 @@ export function createProject(projectName) {
   return { projectName, tasks };
 }
 
-export default function addTasktoProject(taskObject, project) {
+export function addTasktoProject(taskObject, project) {
   project.tasks.push(taskObject);
 
   return project;

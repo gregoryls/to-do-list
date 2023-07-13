@@ -1,6 +1,6 @@
 import { createElementWithClass } from "./elementCreate";
 
-export default function createTask(name, description, dueDate, priority) {
+export function createTask(name, description, dueDate, priority) {
   return { name, description, dueDate, priority };
 }
 
