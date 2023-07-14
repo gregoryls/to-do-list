@@ -14,6 +14,7 @@ import * as project from "./projects";
 // TODO make a notes tab
 // investigate disappearing image problem with sidebar icon
 // temp bookmarks for html loader caching for asset issue
+
 // make modal overlay
 
 const testObject = task.createTask(
