@@ -8,7 +8,7 @@ export function getUserTaskInput() {
   const name = document.getElementById("taskName").value;
   console.log(name);
   const description = document.getElementById("taskDescription").value;
-  const dueDate = document.getElementById("taskDueDate").value;
+  const dueDate = document.getElementById("taskDueDate").value.split("T");
   const priority = document.getElementById("taskPriority").value;
 
   return { name, description, dueDate, priority };
