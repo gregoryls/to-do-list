@@ -8,6 +8,7 @@ module.exports = {
     elementCreate: "./src/elementCreate.js",
     task: "./src/task.js",
     projects: "./src/projects.js",
+    utils: "./src/utils.js",
   },
   devtool: "inline-source-map",
   output: {
