@@ -31,14 +31,20 @@ console.log(project.addTasktoProject(testObject, testProject));
 task.generateTaskDOM(testObject);
 
 const newTaskButton = document.getElementById("newTaskButton");
+const modal = document.getElementById("taskModal");
+const overlay = document.getElementById("overlay");
+
 newTaskButton.addEventListener("click", () => {
   const newTask = document.getElementById("taskModal");
 
-  if (newTask.style.display === "none" || newTask.style.display === "") {
-    newTask.style.display = "block";
-  } else {
-    newTask.style.display = "none";
-  }
+  modal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+
+  // if (newTask.style.display === "none" || newTask.style.display === "") {
+  //   newTask.style.display = "block";
+  // } else {
+  //   newTask.style.display = "none";
+  // }
 });
 
 const taskSubmit = document.getElementById("taskSubmit");
