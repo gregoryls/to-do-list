@@ -35,6 +35,10 @@ const newTaskButton = document.getElementById("newTaskButton");
 const modal = document.getElementById("taskModal");
 const overlay = document.getElementById("overlay");
 
+overlay.addEventListener("click", () => {
+  utils.hideModal();
+});
+
 newTaskButton.addEventListener("click", () => {
   const newTask = document.getElementById("taskModal");
 
@@ -51,4 +55,6 @@ const taskSubmit = document.getElementById("taskSubmit");
 taskSubmit.addEventListener("click", () => {
   // console.log(createTask());
   console.log(task.getUserTaskInput());
+
+  utils.hideModal();
 });
