@@ -5,6 +5,7 @@ import "./style.css";
 // import contentCreation from "./content";
 import * as task from "./task";
 import * as project from "./projects";
+import * as utils from "./utils";
 
 // document.body.appendChild(createElementWithId("div", "test"));
 
@@ -37,8 +38,7 @@ const overlay = document.getElementById("overlay");
 newTaskButton.addEventListener("click", () => {
   const newTask = document.getElementById("taskModal");
 
-  modal.classList.remove("hidden");
-  overlay.classList.remove("hidden");
+  utils.showModal();
 
   // if (newTask.style.display === "none" || newTask.style.display === "") {
   //   newTask.style.display = "block";
