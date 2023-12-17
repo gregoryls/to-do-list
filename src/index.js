@@ -15,6 +15,8 @@ import * as utils from "./utils";
 // TODO make a notes tab
 // investigate disappearing image problem with sidebar icon
 // temp bookmarks for html loader caching for asset issue
+// project button change > to V
+// need way to store projects, probably an array
 
 // make modal overlay
 
