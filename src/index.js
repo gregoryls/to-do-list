@@ -34,6 +34,7 @@ console.log(project.addTasktoProject(testObject, testProject));
 task.generateTaskDOM(testObject);
 
 const newTaskButton = document.getElementById("newTaskButton");
+const newProjectButton = document.getElementById("newProjectButton");
 const modal = document.getElementById("taskModal");
 const overlay = document.getElementById("overlay");
 
@@ -59,4 +60,11 @@ taskSubmit.addEventListener("click", () => {
   console.log(task.getUserTaskInput());
 
   utils.hideModal();
+});
+
+newProjectButton.addEventListener("click", () => {
+  const buttonText = newProjectButton.textContent;
+
+  if (buttonText === ">") newProjectButton.textContent = "V";
+  if (buttonText === "V") newProjectButton.textContent = ">";
 });
