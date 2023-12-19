@@ -69,3 +69,11 @@ newProjectButton.addEventListener("click", () => {
   if (buttonText === ">") newProjectButton.textContent = "V";
   if (buttonText === "V") newProjectButton.textContent = ">";
 });
+
+addProjectButton.addEventListener("click", () => {
+  const projectName = project.getNewProjectName();
+  const newProject = project.createProject(projectName);
+
+  projectList.push(newProject);
+  console.log(projectList);
+});
