@@ -8,3 +8,9 @@ export function addTasktoProject(taskObject, project) {
 
   return project;
 }
+
+export function getNewProjectName() {
+  const name = document.getElementById("newProjectInput").value;
+
+  return name;
+}

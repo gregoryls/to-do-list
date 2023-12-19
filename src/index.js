@@ -18,7 +18,7 @@ import * as utils from "./utils";
 // project button change > to V
 // need way to store projects, probably an array
 
-// make modal overlay
+const projectList = [];
 
 const testObject = task.createTask(
   "nametest",
@@ -35,6 +35,7 @@ task.generateTaskDOM(testObject);
 
 const newTaskButton = document.getElementById("newTaskButton");
 const newProjectButton = document.getElementById("newProjectButton");
+const addProjectButton = document.getElementById("addProjectButton");
 const modal = document.getElementById("taskModal");
 const overlay = document.getElementById("overlay");
 
