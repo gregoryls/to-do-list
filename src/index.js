@@ -40,13 +40,15 @@ const modal = document.getElementById("taskModal");
 const overlay = document.getElementById("overlay");
 
 overlay.addEventListener("click", () => {
-  utils.hideModal();
+  utils.addClass("taskModal", "hidden");
+  utils.addClass("overlay", "hidden");
 });
 
 newTaskButton.addEventListener("click", () => {
   const newTask = document.getElementById("taskModal");
 
-  utils.showModal();
+  utils.removeClass("taskModal", "hidden");
+  utils.removeClass("overlay", "hidden");
 
   // if (newTask.style.display === "none" || newTask.style.display === "") {
   //   newTask.style.display = "block";
@@ -60,7 +62,8 @@ taskSubmit.addEventListener("click", () => {
   // console.log(createTask());
   console.log(task.getUserTaskInput());
 
-  utils.hideModal();
+  utils.addClass("taskModal", "hidden");
+  utils.addClass("overlay", "hidden");
 });
 
 newProjectButton.addEventListener("click", () => {
