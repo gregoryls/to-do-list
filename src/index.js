@@ -69,8 +69,14 @@ taskSubmit.addEventListener("click", () => {
 newProjectButton.addEventListener("click", () => {
   const buttonText = newProjectButton.textContent;
 
-  if (buttonText === ">") newProjectButton.textContent = "V";
-  if (buttonText === "V") newProjectButton.textContent = ">";
+  if (buttonText === ">") {
+    newProjectButton.textContent = "V";
+    utils.removeClass("newProjectWrap", "hidden");
+  }
+  if (buttonText === "V") {
+    newProjectButton.textContent = ">";
+    utils.addClass("newProjectWrap", "hidden");
+  }
 });
 
 addProjectButton.addEventListener("click", () => {
