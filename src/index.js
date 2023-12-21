@@ -17,6 +17,7 @@ import * as utils from "./utils";
 // temp bookmarks for html loader caching for asset issue
 // project button change > to V
 // need way to store projects, probably an array
+// use ...args and loop to do multiple elements for add/remove class
 
 const projectList = [];
 
@@ -47,8 +48,8 @@ overlay.addEventListener("click", () => {
 newTaskButton.addEventListener("click", () => {
   const newTask = document.getElementById("taskModal");
 
-  utils.removeClass("taskModal", "hidden");
-  utils.removeClass("overlay", "hidden");
+  utils.removeClass("hidden", "taskModal", "overlay");
+  // utils.removeClass("overlay", "hidden");
 
   // if (newTask.style.display === "none" || newTask.style.display === "") {
   //   newTask.style.display = "block";
