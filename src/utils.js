@@ -10,7 +10,9 @@ export function removeClass(className, ...IDs) {
   }
 }
 
-export function addClass(id, className) {
-  const element = document.getElementById(id);
-  element.classList.add(className);
+export function addClass(className, ...IDs) {
+  for (let i = 0; i < IDs.length; i += 1) {
+    const element = document.getElementById(IDs[i]);
+    element.classList.add(className);
+  }
 }
