@@ -70,11 +70,11 @@ newProjectButton.addEventListener("click", () => {
 
   if (buttonText === ">") {
     newProjectButton.textContent = "V";
-    utils.removeClass("newProjectWrap", "hidden");
+    utils.removeClass("hidden", "newProjectWrap");
   }
   if (buttonText === "V") {
     newProjectButton.textContent = ">";
-    utils.addClass("newProjectWrap", "hidden");
+    utils.addClass("hidden", "newProjectWrap");
   }
 });
 
