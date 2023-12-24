@@ -14,18 +14,20 @@ import * as utils from "./utils";
 
 const projectList = [];
 
-const testObject = task.createTask(
+const sampleObject = task.createTask(
   "nametest",
   "desctest",
   "datetest",
   "lowtest"
 );
 
-const testProject = project.createProject("test project");
+const sampleProject = project.createProject("sample project");
+projectList.push(sampleProject);
 
-console.log(project.addTasktoProject(testObject, testProject));
+console.log(project.addTasktoProject(sampleObject, sampleProject));
+console.log(projectList);
 
-task.generateTaskDOM(testObject);
+task.generateTaskDOM(sampleObject);
 
 const newTaskButton = document.getElementById("newTaskButton");
 const newProjectButton = document.getElementById("newProjectButton");
