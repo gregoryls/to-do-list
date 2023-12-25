@@ -13,6 +13,7 @@ import * as utils from "./utils";
 // use ...args and loop to do multiple elements for add/remove class
 
 const projectList = [];
+let currentProject = {};
 
 const sampleObject = task.createTask(
   "nametest",
@@ -23,6 +24,10 @@ const sampleObject = task.createTask(
 
 const sampleProject = project.createProject("sample project");
 projectList.push(sampleProject);
+
+// currentProject = projectList[0];
+[currentProject] = projectList;
+console.log(currentProject);
 
 console.log(project.addTasktoProject(sampleObject, sampleProject));
 console.log(projectList);
