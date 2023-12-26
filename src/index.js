@@ -10,7 +10,7 @@ import * as utils from "./utils";
 // temp bookmarks for html loader caching for asset issue
 // project button change > to V
 // need way to store projects, probably an array
-// use ...args and loop to do multiple elements for add/remove class
+// rewrite task DOM
 
 const projectList = [];
 let currentProject = {};

@@ -32,6 +32,5 @@ export function generateTaskDOM(taskObject) {
 
   allTaskElements.appendChild(taskWrapper);
 }
-// TODO project logic
-// TODO look into date formats
+
 // TD have a color indicator to go with priority, red yellow green for instance
