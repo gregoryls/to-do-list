@@ -15,9 +15,9 @@ export function getUserTaskInput() {
 }
 
 export function generateTaskDOM(taskObject) {
-  const allTaskElements = document.getElementById("tasks");
+  // const allTaskElements = document.getElementById("tasks");
 
-  const taskWrapper = createElementWithClass("div", "taskWrapper");
+  // const taskWrapper = createElementWithClass("div", "taskWrapper");
 
   const taskName = createElementWithClass("p", "taskName");
   taskName.textContent = taskObject.name;
@@ -28,9 +28,18 @@ export function generateTaskDOM(taskObject) {
   const taskPriority = createElementWithClass("p", "taskPriority");
   taskPriority.textContent = taskObject.priority;
 
-  taskWrapper.append(taskName, taskDescription, taskDueDate, taskPriority);
+  // taskWrapper.append(taskName, taskDescription, taskDueDate, taskPriority);
 
-  allTaskElements.appendChild(taskWrapper);
+  // allTaskElements.appendChild(taskWrapper);
+  const nameList = document.getElementById("nameList");
+  const descriptionList = document.getElementById("descriptionList");
+  const dueDateList = document.getElementById("dueDateList");
+  const priorityList = document.getElementById("priorityList");
+
+  nameList.append(taskName);
+  descriptionList.append(taskDescription);
+  dueDateList.append(taskDueDate);
+  priorityList.append(taskPriority);
 }
 
 // TD have a color indicator to go with priority, red yellow green for instance
