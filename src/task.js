@@ -8,7 +8,11 @@ export function getUserTaskInput() {
   const name = document.getElementById("taskName").value;
   console.log(name);
   const description = document.getElementById("taskDescription").value;
-  const dueDate = document.getElementById("taskDueDate").value.split("T");
+  // TD consider variable name
+  const dueDate = [
+    document.getElementById("taskDueDate").value,
+    document.getElementById("taskTime").value,
+  ];
   const priority = document.getElementById("taskPriority").value;
 
   return { name, description, dueDate, priority };
@@ -24,7 +28,7 @@ export function generateTaskDOM(taskObject) {
   const taskDescription = createElementWithClass("p", "taskDescription");
   taskDescription.textContent = taskObject.description;
   const taskDueDate = createElementWithClass("p", "taskDueDate");
-  taskDueDate.textContent = taskObject.dueDate;
+  taskDueDate.textContent = `${taskObject.dueDate[0]} ${taskObject.dueDate[1]}`;
   const taskPriority = createElementWithClass("p", "taskPriority");
   taskPriority.textContent = taskObject.priority;
 
