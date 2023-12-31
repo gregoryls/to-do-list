@@ -55,6 +55,10 @@ taskSubmit.addEventListener("click", () => {
   // console.log(createTask());
   const newTask = task.getUserTaskInput();
   console.log(newTask);
+
+  project.addTasktoProject(newTask, currentProject);
+  console.log(currentProject);
+
   task.generateTaskDOM(newTask);
 
   utils.addClass("hidden", "taskModal", "overlay");
