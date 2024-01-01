@@ -62,26 +62,33 @@
     </section>
 
     <section id="taskModal" class="modal hidden">
-      <label for="taskName">Task Name:</label>
-      <input type="text" name="name" id="taskName" />
-
-      <label for="taskDescription">Description:</label>
-      <input type="text" name="description" id="taskDescription" />
-
-      <label for="taskDueDate">Task Date:</label>
-      <input type="date" name="date" id="taskDueDate" />
-
-      <label for="taskTime">Task Time:</label>
-      <input type="time" name="time" id="taskTime" />
-
-      <label for="taskPriority">Priority:</label>
-      <select name="priority" id="taskPriority">
-        <option value="1">High</option>
-        <option value="2">Medium</option>
-        <option value="3">Low</option>
-      </select>
-
-      <button id="taskSubmit">Submit</button>
+      <div id="modalCSSWrap">
+        <div class="modalNameInput">
+          <label for="taskName">Task Name:</label>
+          <input type="text" name="name" id="taskName" />
+        </div>
+        <div id="modalDescriptionInput">
+          <label for="taskDescription">Description:</label>
+          <input type="text" name="description" id="taskDescription" />
+        </div>
+        <div id="modalDateInput">
+          <label for="taskDueDate">Task Date:</label>
+          <input type="date" name="date" id="taskDueDate" />
+        </div>
+        <div id="modalTimeInput">
+          <label for="taskTime">Task Time:</label>
+          <input type="time" name="time" id="taskTime" />
+        </div>
+        <div id="modalPriorityInput">
+          <label for="taskPriority">Priority:</label>
+          <select name="priority" id="taskPriority">
+            <option value="1">High</option>
+            <option value="2">Medium</option>
+            <option value="3">Low</option>
+          </select>
+        </div>
+        <div id="modalSubmit"><button id="taskSubmit">Submit</button></div>
+      </div>
     </section>
 
     <div id="overlay" class="hidden"></div>
