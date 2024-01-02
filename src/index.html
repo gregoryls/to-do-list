@@ -61,25 +61,26 @@
       </div>
     </section>
 
-    <section id="taskModal" class="modal hidden">
+    <!-- add hidden class back after css -->
+    <section id="taskModal" class="modal">
       <div id="modalCSSWrap">
-        <div class="modalNameInput">
+        <div id="modalNameInput modalInput">
           <label for="taskName">Task Name:</label>
           <input type="text" name="name" id="taskName" />
         </div>
-        <div id="modalDescriptionInput">
+        <div id="modalDescriptionInput" class="modalInput">
           <label for="taskDescription">Description:</label>
           <input type="text" name="description" id="taskDescription" />
         </div>
-        <div id="modalDateInput">
+        <div id="modalDateInput" class="modalInput">
           <label for="taskDueDate">Task Date:</label>
           <input type="date" name="date" id="taskDueDate" />
         </div>
-        <div id="modalTimeInput">
+        <div id="modalTimeInput" class="modalInput">
           <label for="taskTime">Task Time:</label>
           <input type="time" name="time" id="taskTime" />
         </div>
-        <div id="modalPriorityInput">
+        <div id="modalPriorityInput" class="modalInput">
           <label for="taskPriority">Priority:</label>
           <select name="priority" id="taskPriority">
             <option value="High">High</option>

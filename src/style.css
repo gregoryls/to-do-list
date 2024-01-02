@@ -64,6 +64,9 @@ div {
 #modalCSSWrap {
   display: flex;
   flex-direction: column;
+  padding: 10%;
+
+  gap: 1rem;
 }
 
 .hidden {
