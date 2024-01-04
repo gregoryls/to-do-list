@@ -69,6 +69,11 @@ div {
   gap: 1rem;
 }
 
+#taskName,
+#taskDescription {
+  width: 95%;
+}
+
 .hidden {
   display: none;
 }
