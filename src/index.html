@@ -73,23 +73,29 @@
           <textarea name="description" id="taskDescription" cols="220">
           </textarea>
         </div>
-        <div id="modalDateInput" class="modalInput">
-          <label for="taskDueDate">Task Date:</label>
-          <input type="date" name="date" id="taskDueDate" />
+        <div id="twoColumnWrap">
+          <div id="dateTimeWrap">
+            <div id="modalDateInput" class="modalInput">
+              <label for="taskDueDate">Task Date:</label>
+              <input type="date" name="date" id="taskDueDate" />
+            </div>
+            <div id="modalTimeInput" class="modalInput">
+              <label for="taskTime">Task Time:</label>
+              <input type="time" name="time" id="taskTime" />
+            </div>
+          </div>
+          <div id="prioritySubmitWrap">
+            <div id="modalPriorityInput" class="modalInput">
+              <label for="taskPriority">Priority:</label>
+              <select name="priority" id="taskPriority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+            <div id="modalSubmit"><button id="taskSubmit">Submit</button></div>
+          </div>
         </div>
-        <div id="modalTimeInput" class="modalInput">
-          <label for="taskTime">Task Time:</label>
-          <input type="time" name="time" id="taskTime" />
-        </div>
-        <div id="modalPriorityInput" class="modalInput">
-          <label for="taskPriority">Priority:</label>
-          <select name="priority" id="taskPriority">
-            <option value="High">High</option>
-            <option value="Medium">Medium</option>
-            <option value="Low">Low</option>
-          </select>
-        </div>
-        <div id="modalSubmit"><button id="taskSubmit">Submit</button></div>
       </div>
     </section>
 

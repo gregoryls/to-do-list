@@ -64,9 +64,13 @@ div {
 #modalCSSWrap {
   display: flex;
   flex-direction: column;
-  padding: 10%;
+  padding: 5%;
 
   gap: 1rem;
+}
+
+#twoColumnWrap {
+  display: flex;
 }
 
 #taskName,
