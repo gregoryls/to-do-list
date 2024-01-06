@@ -19,9 +19,7 @@ body {
   height: 100vh;
   margin: 0;
 }
-div {
-  border: 1px dashed black;
-}
+
 /* Header */
 #header {
   text-align: center;
@@ -54,9 +52,9 @@ div {
   position: fixed;
   z-index: 2;
   left: 25%;
-  top: 25%;
+  top: 30%;
   width: 50%;
-  height: 50%;
+  height: 40%;
   overflow: auto;
 
   background-color: rgb(211, 211, 211);
@@ -69,13 +67,22 @@ div {
   gap: 1rem;
 }
 
-#twoColumnWrap {
-  display: flex;
-}
-
 #taskName,
 #taskDescription {
   width: 95%;
+}
+
+#twoColumnWrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+#modalSubmit {
+  text-align: center;
+}
+
+#taskSubmit {
+  font-size: 2rem;
 }
 
 .hidden {
