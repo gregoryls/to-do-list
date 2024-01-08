@@ -1,6 +1,10 @@
-export function createProject(projectName) {
-  const tasks = [];
-  return { projectName, tasks };
+export function createProject(projectName, projectList) {
+  const obj = {};
+  obj.projectName = projectName;
+  obj.tasks = [];
+
+  projectList.push(obj);
+  return obj;
 }
 
 export function addTasktoProject(taskObject, project) {

@@ -22,8 +22,8 @@ const sampleObject = task.createTask(
   "lowtest"
 );
 
-const sampleProject = project.createProject("sample project");
-projectList.push(sampleProject);
+const sampleProject = project.createProject("sample project", projectList);
+// projectList.push(sampleProject);
 
 // currentProject = projectList[0];
 [currentProject] = projectList;
