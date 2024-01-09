@@ -14,8 +14,15 @@ export function addClass(className, ...IDs) {
 
 export function setDateInputToToday() {
   const dateInput = document.getElementById("taskDueDate");
+  const timeInput = document.getElementById("taskTime");
+
+  const dateTime = new Date();
 
   // Split at 'T' to remove time info after calendar date;
-  const today = new Date().toISOString().split("T")[0];
+  const today = dateTime.toISOString().split("T")[0];
   dateInput.value = today;
+
+  // Split at blank character to remove time zone info
+  const time = dateTime.toTimeString().split(" ")[0];
+  timeInput.value = time;
 }
