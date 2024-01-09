@@ -12,6 +12,8 @@ import * as utils from "./utils";
 // need way to store projects, probably an array
 // rewrite task DOM
 
+utils.setDateInputToToday();
+
 const projectList = [];
 let currentProject = {};
 

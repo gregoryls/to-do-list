@@ -11,3 +11,11 @@ export function addClass(className, ...IDs) {
     element.classList.add(className);
   }
 }
+
+export function setDateInputToToday() {
+  const dateInput = document.getElementById("taskDueDate");
+
+  // Split at 'T' to remove time info after calendar date;
+  const today = new Date().toISOString().split("T")[0];
+  dateInput.value = today;
+}
