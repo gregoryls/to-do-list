@@ -11,6 +11,7 @@ import * as utils from "./utils";
 // project button change > to V
 // need way to store projects, probably an array
 // rewrite task DOM
+// fix default date timezone with isoString
 
 utils.setDateInputToToday();
 
