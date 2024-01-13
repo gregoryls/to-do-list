@@ -19,27 +19,13 @@ export function setDateInputToToday() {
   const dateTime = new Date();
   console.log(dateTime);
   const year = dateTime.getFullYear();
+  // padStart() to ensure two digit month and day format for date input
   const month = (dateTime.getMonth() + 1).toString().padStart(2, "0");
   const day = dateTime.getDate().toString().padStart(2, "0");
   const today = `${year}-${month}-${day}`;
 
-  const options = {
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    timeZone: "America/New_York",
-  };
-  const test = dateTime.toLocaleString("en-US", options).replace(/\//g, "-");
-  console.log(today);
-
-  // Split at 'T' to remove time info after calendar date;
-  // const today = dateTime.toISOString().split("T")[0];
-  // console.log(today);
-  // console.log(todayy);
   dateInput.value = today;
 
-  // Split at blank character to remove time zone info
-  const time = dateTime.toTimeString().split(" ")[0];
   const oneHourFuture = new Date(dateTime.getTime() + 60 * 60 * 1000);
   const oneHourFutureTime = oneHourFuture.toTimeString().split(" ")[0];
   console.log(oneHourFuture);
